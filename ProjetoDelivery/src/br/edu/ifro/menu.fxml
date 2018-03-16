@@ -24,18 +24,32 @@
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Produtos Disponiveis">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Produtos">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false" text="Categoria">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Bebida " />
+                            <MenuItem mnemonicParsing="false" text="Alimentos" />
+                              <MenuItem mnemonicParsing="false" text="Frios" />
+                              <MenuItem mnemonicParsing="false" text="Limpeza" />
+                              <MenuItem mnemonicParsing="false" text="Carne" />
+                              <MenuItem mnemonicParsing="false" text="Feira" />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+               </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Pedidos ">
             <items>
               <MenuItem mnemonicParsing="false" text="Realizados " />
+                  <MenuItem mnemonicParsing="false" text="Finalizados" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Entregas">
               <items>
-                <MenuItem mnemonicParsing="false" text="A fazer" />
+                <MenuItem mnemonicParsing="false" text="Pendente" />
                   <MenuItem mnemonicParsing="false" text="Realizadas" />
               </items>
             </Menu>
@@ -66,10 +80,6 @@
       <Button layoutX="77.0" layoutY="189.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="147.0" style="-fx-background-color: #d6c5c5;" text="Pedidos Realizados" />
       <Button layoutX="298.0" layoutY="189.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="147.0" style="-fx-background-color: #d6c5c5;" text="Entregas A Fazer" />
       <Button layoutX="529.0" layoutY="189.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="147.0" style="-fx-background-color: #d6c5c5;" text="Entregas Realizadas" />
-      <ImageView fitHeight="270.0" fitWidth="405.0" layoutX="380.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../../Pictures/logo.png" />
-         </image>
-      </ImageView>
+      <Button layoutX="753.0" layoutY="482.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" text="Sair" textFill="#b21515" />
    </children>
 </AnchorPane>
