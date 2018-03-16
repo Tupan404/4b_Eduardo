@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuController">
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="1091.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuController">
    <children>
-      <MenuBar layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="931.0">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="1092.0" style="-fx-background-color: #904242;">
         <menus>
           <Menu mnemonicParsing="false" text="Cadastros">
             <items>
               <MenuItem mnemonicParsing="false" text="Cadastro Cliente" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Cadastro funcionario" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Cadastro produtos" />
             </items>
           </Menu>
@@ -24,12 +30,13 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Pedidos ">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" text="Realizados " />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Entregas">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="A fazer" />
+                  <MenuItem mnemonicParsing="false" text="Realizadas" />
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Relatorios">
@@ -38,6 +45,31 @@
               </items>
             </Menu>
         </menus>
+         <opaqueInsets>
+            <Insets top="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
       </MenuBar>
+      <Label layoutX="328.0" layoutY="53.0" prefHeight="70.0" prefWidth="388.0" text="Delivery Master " textFill="#904242">
+         <font>
+            <Font name="Lucida Bright Regular" size="48.0" />
+         </font>
+      </Label>
+      <Separator layoutX="13.0" layoutY="123.0" prefHeight="12.0" prefWidth="1067.0" />
+      <Label layoutX="92.0" layoutY="160.0" prefHeight="25.0" prefWidth="79.0" text="Atalhos" textFill="#611818">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="77.0" layoutY="189.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="147.0" style="-fx-background-color: #d6c5c5;" text="Pedidos Realizados" />
+      <Button layoutX="298.0" layoutY="189.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="147.0" style="-fx-background-color: #d6c5c5;" text="Entregas A Fazer" />
+      <Button layoutX="529.0" layoutY="189.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="147.0" style="-fx-background-color: #d6c5c5;" text="Entregas Realizadas" />
+      <ImageView fitHeight="270.0" fitWidth="405.0" layoutX="380.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Pictures/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
