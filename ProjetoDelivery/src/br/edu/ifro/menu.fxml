@@ -8,15 +8,36 @@
 
 <AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuController">
    <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="929.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="Cliente">
+      <MenuBar layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="931.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Cadastro Cliente" />
+                  <MenuItem mnemonicParsing="false" text="Cadastro funcionario" />
+                  <MenuItem mnemonicParsing="false" text="Cadastro produtos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Produtos Disponiveis">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pedidos ">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Entregas">
               <items>
-                <MenuItem mnemonicParsing="false" text="Visualisar" />
-                  <MenuItem mnemonicParsing="false" text="Editar" />
+                <MenuItem mnemonicParsing="false" text="Action 1" />
               </items>
             </Menu>
-         </menus>
+            <Menu mnemonicParsing="false" text="Relatorios">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Entregas diarias " />
+              </items>
+            </Menu>
+        </menus>
       </MenuBar>
    </children>
 </AnchorPane>
