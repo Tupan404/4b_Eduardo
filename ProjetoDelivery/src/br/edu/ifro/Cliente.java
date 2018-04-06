@@ -6,11 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity    @GeneratedValue (strategy = GenerationType.IDENTITY)
+
 public class Cliente {
     
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
 
