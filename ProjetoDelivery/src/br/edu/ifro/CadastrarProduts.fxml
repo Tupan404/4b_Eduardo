@@ -11,75 +11,114 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="677.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.CadastrarProdutsController">
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="677.0" style="-fx-background-color: #F0FFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
    <children>
-      <Label layoutX="21.0" layoutY="29.0" prefHeight="17.0" prefWidth="197.0" text="Codigo:" textFill="#464343">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="677.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField layoutX="90.0" layoutY="48.0" />
+      <Text layoutX="20.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </Label>
-      <TextField layoutX="106.0" layoutY="26.0" prefHeight="34.0" prefWidth="177.0" text="01" />
-      <Label layoutX="30.0" layoutY="67.0" text="Nome:">
+      </Text>
+      <Text layoutX="577.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felipe Lino">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="16.0" />
          </font>
-      </Label>
-      <Label layoutX="313.0" layoutY="80.0" text="Categoria:">
+      </Text>
+      <Text layoutX="516.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário:">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="16.0" />
          </font>
-      </Label>
-      <Label layoutX="32.0" layoutY="123.0" text="Descrição:">
+      </Text>
+      <Text layoutX="39.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </Label>
-      <Label layoutX="379.0" layoutY="285.0" text="Produto:">
+      </Text>
+      <TextField layoutX="127.0" layoutY="113.0" />
+      <Text layoutX="39.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </Label>
-      <Label layoutX="32.0" layoutY="285.0" text="Valor:">
+      </Text>
+      <Text layoutX="364.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </Label>
-      <TextField layoutX="105.0" layoutY="73.0" prefHeight="25.0" prefWidth="177.0" text="COCA-COLA LATA">
+      </Text>
+      <Text layoutX="370.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </TextField>
-      <TextField layoutX="417.0" layoutY="73.0" prefHeight="40.0" prefWidth="197.0" text="BEBIDA">
+      </Text>
+      <TextField layoutX="127.0" layoutY="158.0" />
+      <TextField layoutX="467.0" layoutY="158.0" />
+      <Text layoutX="38.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </TextField>
-      <TextField layoutX="32.0" layoutY="157.0" prefHeight="98.0" prefWidth="582.0">
+      </Text>
+      <TextArea layoutX="37.0" layoutY="301.0" prefHeight="94.0" prefWidth="359.0" />
+      <Text layoutX="423.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem">
          <font>
-            <Font name="Bell MT" size="21.0" />
+            <Font size="18.0" />
          </font>
-      </TextField>
-      <TextField layoutX="102.0" layoutY="278.0" prefHeight="25.0" prefWidth="185.0">
-         <font>
-            <Font name="Bell MT" size="21.0" />
-         </font>
-      </TextField>
-      <Button layoutX="466.0" layoutY="286.0" mnemonicParsing="false" prefHeight="160.0" prefWidth="140.0" text="(Imagem)" />
-      <Button layoutX="322.0" layoutY="406.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" text="Salvar">
+      </Text>
+      <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="492.0" layoutY="301.0">
+         <image>
+            <Image url="@../../../../../../../../Desktop/Nova%20pasta%20(2)/coca.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="530.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Salvar ">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
-      <Button layoutX="195.0" layoutY="406.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="114.0" text="Cancelar">
+      <Button layoutX="386.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Limpar">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
-      <Button layoutX="28.0" layoutY="406.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="153.0" text="Limpar Dados">
+      <Button layoutX="232.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Cancelar ">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
+      <ComboBox layoutX="470.0" layoutY="113.0" prefWidth="150.0" promptText="Bebida" />
+      <Text layoutX="55.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status do produto:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="250.0" layoutY="215.0" mnemonicParsing="false" text="Disponivel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="414.0" layoutY="213.0" mnemonicParsing="false" text="Indisponivel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Separator layoutY="199.0" prefHeight="0.0" prefWidth="677.0" />
+      <Separator layoutX="8.0" layoutY="254.0" prefHeight="0.0" prefWidth="677.0" />
    </children>
 </AnchorPane>
