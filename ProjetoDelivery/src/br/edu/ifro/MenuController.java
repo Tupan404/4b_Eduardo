@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 import javax.persistence.EntityManager;
@@ -28,6 +29,13 @@ public class MenuController implements Initializable {
 
     @FXML
     private MenuItem CadastroCli;
+    @FXML
+    private MenuItem CadastroFunc;
+    @FXML
+    private MenuItem CadastroProd;
+   
+    @FXML
+    private Button btnexit;
 
     
 	
@@ -41,7 +49,7 @@ public class MenuController implements Initializable {
     private void CadastroCli(ActionEvent e) {
         
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("C.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CadastroCliente.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));  
@@ -49,7 +57,48 @@ public class MenuController implements Initializable {
         } catch(Exception ee) {
            ee.printStackTrace();
           }
-			
+	
+              
            }
+
+    @FXML
+    private void CadastroFunc(ActionEvent event) {
+        
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CadastroFuncionario.fxml"));
+                Parent root1 = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root1));  
+                stage.show();
+        } catch(Exception ee) {
+           ee.printStackTrace();
+          }
+	
+
+        
+    }
+
+    @FXML
+    private void CadastroProd(ActionEvent event) {
+        
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CadastrarProduts.fxml"));
+                Parent root1 = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root1));  
+                stage.show();
+        } catch(Exception ee) {
+           ee.printStackTrace();
+          }
+	
+        
+    }
+
+    @FXML
+    private void exit(ActionEvent e) {
+        
+     if  (e.getSource() == btnexit)
+	System.exit(0);
+    }
     
 }

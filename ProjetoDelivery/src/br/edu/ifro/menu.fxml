@@ -17,11 +17,11 @@
         <menus>
           <Menu mnemonicParsing="false" style="fx-background-color: #E0FFFF;" text="Cadastros">
             <items>
-              <MenuItem mnemonicParsing="false" text="Cadastro Cliente" />
+              <MenuItem fx:id="CadastroCli" mnemonicParsing="false" onAction="#CadastroCli" text="Cadastro Cliente" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Cadastro funcionario" />
+                  <MenuItem fx:id="CadastroFunc" mnemonicParsing="false" onAction="#CadastroFunc" text="Cadastro funcionario" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Cadastro produtos" />
+                  <MenuItem fx:id="CadastroProd" mnemonicParsing="false" onAction="#CadastroProd" text="Cadastro produtos" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Produtos Disponiveis">
@@ -90,7 +90,7 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button alignment="BASELINE_RIGHT" contentDisplay="TOP" layoutX="834.0" layoutY="513.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="133.0" text="SAIR" textFill="#b21515">
+      <Button fx:id="btnexit" alignment="BASELINE_RIGHT" contentDisplay="TOP" layoutX="834.0" layoutY="513.0" mnemonicParsing="false" onAction="#exit" prefHeight="61.0" prefWidth="133.0" text="SAIR" textFill="#b21515">
          <font>
             <Font size="14.0" />
          </font></Button>
