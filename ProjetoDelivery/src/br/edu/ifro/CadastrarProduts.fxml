@@ -1,124 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="677.0" style="-fx-background-color: #F0FFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
-   <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="677.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <TextField layoutX="90.0" layoutY="48.0" />
-      <Text layoutX="20.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="577.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felipe Lino">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Text>
-      <Text layoutX="516.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário:">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Text>
-      <Text layoutX="39.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <TextField layoutX="127.0" layoutY="113.0" />
-      <Text layoutX="39.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="364.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="370.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <TextField layoutX="127.0" layoutY="158.0" />
-      <TextField layoutX="467.0" layoutY="158.0" />
-      <Text layoutX="38.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <TextArea layoutX="37.0" layoutY="301.0" prefHeight="94.0" prefWidth="359.0" />
-      <Text layoutX="423.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="492.0" layoutY="301.0">
-         <image>
-            <Image url="@../../../../../../../../Desktop/Nova%20pasta%20(2)/coca.jpg" />
-         </image>
-      </ImageView>
-      <Button layoutX="530.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Salvar ">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="386.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Limpar">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="232.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Cancelar ">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <ComboBox layoutX="470.0" layoutY="113.0" prefWidth="150.0" promptText="Bebida" />
-      <Text layoutX="55.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status do produto:">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <RadioButton layoutX="250.0" layoutY="215.0" mnemonicParsing="false" text="Disponivel">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="414.0" layoutY="213.0" mnemonicParsing="false" text="Indisponivel">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </RadioButton>
-      <Separator layoutY="199.0" prefHeight="0.0" prefWidth="677.0" />
-      <Separator layoutX="8.0" layoutY="254.0" prefHeight="0.0" prefWidth="677.0" />
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="677.0" style="-fx-background-color: #F0FFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.CadastrarProdutsController">
+  <children>
+    <TextField layoutX="93.0" layoutY="75.0" />
+    <Text layoutX="23.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
+      <font>
+        <Font size="18.0" fx:id="x2" />
+      </font>
+    </Text>
+    <Text layoutX="580.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felipe Lino">
+      <font>
+        <Font size="16.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text font="$x1" layoutX="519.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário:" />
+    <Text font="$x2" layoutX="42.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+    <TextField layoutX="130.0" layoutY="127.0" />
+    <Text font="$x2" layoutX="42.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" />
+    <Text font="$x2" layoutX="367.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
+    <Text font="$x2" layoutX="373.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto" />
+    <TextField layoutX="130.0" layoutY="172.0" />
+    <TextField layoutX="470.0" layoutY="172.0" prefWidth="172.0" />
+    <Text font="$x2" layoutX="41.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
+    <TextArea layoutX="40.0" layoutY="323.0" prefHeight="94.0" prefWidth="359.0" />
+    <Text font="$x2" layoutX="426.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
+    <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="495.0" layoutY="315.0">
+      <image>
+        <Image url="@../../../../../../../../Desktop/Nova%20pasta%20(2)/coca.jpg" />
+      </image>
+    </ImageView>
+    <Button layoutX="533.0" layoutY="440.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Salvar ">
+      <font>
+        <Font size="19.0" fx:id="x3" />
+      </font>
+    </Button>
+    <Button font="$x3" layoutX="389.0" layoutY="440.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Limpar" />
+    <Button font="$x3" layoutX="235.0" layoutY="440.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Cancelar " />
+    <ComboBox layoutX="470.0" layoutY="127.0" prefHeight="21.0" prefWidth="171.921875" promptText="Bebida" />
+    <Text font="$x2" layoutX="58.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status do produto:" />
+    <RadioButton layoutX="253.0" layoutY="229.0" mnemonicParsing="false" text="Disponivel">
+      <font>
+        <Font size="15.0" fx:id="x4" />
+      </font>
+    </RadioButton>
+    <RadioButton font="$x4" layoutX="417.0" layoutY="227.0" mnemonicParsing="false" text="Indisponivel" />
+    <Separator layoutX="3.0" layoutY="213.0" prefHeight="0.0" prefWidth="677.0" />
+    <Separator layoutX="11.0" layoutY="268.0" prefHeight="0.0" prefWidth="677.0" />
+    <Separator layoutX="0.0" layoutY="66.0" prefHeight="0.0" prefWidth="677.0" />
+    <MenuBar layoutX="10.0" layoutY="11.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
 </AnchorPane>
