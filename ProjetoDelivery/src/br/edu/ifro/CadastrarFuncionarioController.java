@@ -58,6 +58,8 @@ public class CadastrarFuncionarioController implements Initializable {
     private Font x3;
     @FXML
     private Font x21;
+    @FXML
+    private Button btnexit;
     
     @FXML
     private void limpar(ActionEvent e) {
@@ -84,6 +86,13 @@ public class CadastrarFuncionarioController implements Initializable {
         txtcomp.setText("");
         
 }
+    
+    @FXML
+    private void exit(ActionEvent e) {
+        
+     if  (e.getSource() == btnexit)
+	System.exit(0);
+    }
 
     /**
      * Initializes the controller class.
