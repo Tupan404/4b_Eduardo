@@ -5,11 +5,15 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 
@@ -28,8 +32,6 @@ public class CadastrarProdutsController implements Initializable {
     @FXML
     private Font x4;
     @FXML
-    private Font x21;
-    @FXML
     private TextField txtcod;
     @FXML
     private TextField txtvalor;
@@ -37,14 +39,9 @@ public class CadastrarProdutsController implements Initializable {
     private TextField txtprod;
     @FXML
     private TextArea txtdesc;
-    @FXML
     private TextField txtquant;
     @FXML
     private Button btnsalvar;
-     
-     
-     
-    
      @FXML
     private void exit(ActionEvent e) {
         
@@ -70,7 +67,6 @@ public class CadastrarProdutsController implements Initializable {
     private void limpar() {
    	txtcod.setText("");
 	txtprod.setText("");
-        txtquant.setText("");
         txtvalor.setText("");
         txtdesc.setText("");
     
@@ -79,15 +75,14 @@ public class CadastrarProdutsController implements Initializable {
     @FXML
     private void salvar(ActionEvent e) {
         if (e.getSource()== btnsalvar) {
-	salvarprod();
+	JOptionPane.showMessageDialog(null, "Cadastro concluido com Sucesso ");
+   
         
     }
     }
-
-    private void salvarprod() {
-        JOptionPane.showMessageDialog(null, "Cadastro concluido com Sucesso ");
-              limpar();
-			       
-        
-    }
+    
 }
+    
+
+   
+
