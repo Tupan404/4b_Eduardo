@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Font;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,10 +22,43 @@ import javax.swing.JOptionPane;
  */
 public class CadastroClienteController implements Initializable {
     
-    @FXML
     private Label label;
-    
     @FXML
+    private TextField txtcod;
+    @FXML
+    private Font x2;
+    @FXML
+    private Font x1;
+    @FXML
+    private TextField txtcelular;
+    @FXML
+    private TextField txtnome;
+    @FXML
+    private Font x3;
+    @FXML
+    private Font x21;
+    @FXML
+    private TextField txcpf;
+    @FXML
+    private TextField txtemail;
+    @FXML
+    private TextField txtcomp;
+    @FXML
+    private TextField txtbairro;
+    @FXML
+    private TextField txtnum;
+    @FXML
+    private TextField txtrua;
+    @FXML
+    private TextField txtrg;
+    @FXML
+    private Font x211;
+    @FXML
+    private TextField txtcidade;
+    @FXML
+    private TextField txtuf;
+    
+    
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
