@@ -14,6 +14,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.swing.JOptionPane;
 
 /**
@@ -57,16 +60,31 @@ public class CadastroClienteController implements Initializable {
     private TextField txtcidade;
     @FXML
     private TextField txtuf;
+    @FXML
+    private Button btnsalvar;
     
+    @FXML 
+    private void salvar (){
+        
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Delivery");
+        EntityManager em = emf.createEntityManager();
+        
+        Cliente a = new Cliente();
+        
+       /* a.setNome(txtnome.getText());
+        a.setCpf(txcpf.getText());
+        a.setRg(txt)
+        a.setEndereco
+        a.setCelular
+        em.getTransaction().begin();
+        em.persist(a);
+        em.getTransaction().commit();*/
     
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
+    }    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+      
     }    
     
 }

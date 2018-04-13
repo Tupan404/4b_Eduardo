@@ -1,4 +1,4 @@
-package br.edu.ifro;
+/*package br.edu.ifro;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -87,4 +87,4 @@ public class CadastrarFuncionarioController implements Initializable {
 			       
         
     }
-}
+}*/

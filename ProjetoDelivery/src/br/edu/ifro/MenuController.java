@@ -105,6 +105,10 @@ public class MenuController implements Initializable {
      if  (e.getSource() == btnexit)
 	System.exit(0);
     }
+
+    private void setResizable(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
    
 
