@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.edu.ifro;
+/*package br.edu.ifro;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -11,56 +6,56 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
+import javax.swing.JOptionPane;
 
-/**
- * FXML Controller class
- *
- * @author 03850980227
- */
+
 public class CadastrarFuncionarioController implements Initializable {
 
-    @FXML
-    private TextField txtcod;
-   
-    @FXML
-    private TextField txtcpf;
-    @FXML
-    private TextField txtdtnas;
-    @FXML
-    private TextField txtsal;
-    @FXML
-    private TextField txtdtcont;
-    @FXML
-    private TextField txtemail;
-    @FXML
-    private TextField txttel;
-    @FXML
-    private TextField txtcomp;
-    @FXML
-    private TextField txtbairro;
-    @FXML
-    private TextField txtnum;
-    @FXML
-    private TextField txtrua;
+     @FXML
+    private Button btncancelar;
     @FXML
     private Button btnlimpar;
     @FXML
-    private Font x2;
+    private TextField txtcod;
     @FXML
-    private Font x1;
+    private TextField txtcpf;
     @FXML
-    private TextField txtfunc;
+    private TextField txtfuncao;
     @FXML
-    private TextField txtnome;
+    private TextArea txtdatacontrato;
     @FXML
-    private Font x3;
+    private TextField txttelefone;
     @FXML
-    private Font x21;
+    private Button btnsalvar;
     @FXML
-    private Button btnexit;
+    private Button btnnome;
+    @FXML
+    private TextField txtdatanascimento;
+    @FXML
+    private TextField txtsalario;
+    @FXML
+    private TextField txtfuncao;
+     
+     
+     
     
+     @FXML
+    private void exit(ActionEvent e) {
+        
+     if  (e.getSource() == btncancelar)
+	System.exit(0);
+    }
+    
+     
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+
+    }    
+
     @FXML
     private void limpar(ActionEvent e) {
         if(e.getSource()== btnlimpar) {
@@ -70,36 +65,26 @@ public class CadastrarFuncionarioController implements Initializable {
     }
 
     private void limpar() {
-   	
-        
-	txtnome.setText("");
-        txtcpf.setText("");
-        txtdtnas.setText("");
-        txtfunc.setText("");
-        txtsal.setText("");
-        txtdtcont.setText("");
-        txtemail.setText("");
-        txttel.setText("");
-        txtrua.setText("");
-        txtnum.setText("");
-        txtbairro.setText("");
-        txtcomp.setText("");
-        
-}
+   	txtcod.setText("");
+	txtprod.setText("");
+        txtquant.setText("");
+        txtvalor.setText("");
+        txtdesc.setText("");
     
+}
+
     @FXML
-    private void exit(ActionEvent e) {
+    private void salvar(ActionEvent e) {
+        if (e.getSource()== btnsalvar) {
+	salvarprod();
         
-     if  (e.getSource() == btnexit)
-	System.exit(0);
+    }
     }
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
-}
+    private void salvarprod() {
+        JOptionPane.showMessageDialog(null, "Cadastro concluido com Sucesso ");
+              limpar();
+			       
+        
+    }
+}*/

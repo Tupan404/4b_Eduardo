@@ -28,7 +28,7 @@
       <TextField fx:id="txtcelular" layoutX="42.0" layoutY="220.0" prefHeight="25.0" prefWidth="149.0" text="(##)#####-####" />
       <TextField fx:id="txtnome" layoutX="370.0" layoutY="89.0" prefHeight="25.0" prefWidth="265.0" text="Nome" />
       <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
-      <Button alignment="CENTER_RIGHT" layoutX="753.0" layoutY="507.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
+      <Button fx:id="btnsalvar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="509.0" mnemonicParsing="false" onAction="#salvar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
          <font>
             <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
          </font>
