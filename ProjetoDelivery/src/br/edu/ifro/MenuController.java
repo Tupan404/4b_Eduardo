@@ -5,6 +5,8 @@
  */
 package br.edu.ifro;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -19,6 +21,8 @@ import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  * FXML Controller class
@@ -36,7 +40,8 @@ public class MenuController implements Initializable {
    
     @FXML
     private Button btnexit;
-
+    
+   
     
 	
    
@@ -100,5 +105,9 @@ public class MenuController implements Initializable {
      if  (e.getSource() == btnexit)
 	System.exit(0);
     }
+    
+   
+
+   
     
 }

@@ -9,71 +9,128 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="817.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
    <children>
-      <Label layoutX="16.0" layoutY="59.0" text="Nome ">
+      <TextField fx:id="txtcod" layoutX="42.0" layoutY="87.0" prefHeight="25.0" prefWidth="62.0" text="Cod" />
+      <Text layoutX="42.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
          <font>
-            <Font name="Berlin Sans FB" size="22.0" />
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x2" />
          </font>
-      </Label>
-      <Label layoutX="14.0" layoutY="108.0" text="CPF ">
+      </Text>
+      <Text layoutX="91.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="João Barboza">
          <font>
-            <Font name="Berlin Sans FB" size="22.0" />
+            <Font size="16.0" fx:id="x1" />
          </font>
-      </Label>
-      <Label layoutX="13.0" layoutY="156.0" text="Data Nascimento">
+      </Text>
+      <Text font="$x1" layoutX="22.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
+      <Text font="$x2" layoutX="42.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função" />
+      <Text font="$x2" layoutX="376.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Nascimento" />
+      <Text font="$x2" layoutX="374.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <TextField fx:id="txtvalor" layoutX="42.0" layoutY="217.0" prefHeight="25.0" prefWidth="149.0" text="Função" />
+      <TextField fx:id="txtprod" layoutX="370.0" layoutY="89.0" prefHeight="25.0" prefWidth="265.0" text="Nome" />
+      <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
+      <Button alignment="CENTER_RIGHT" layoutX="753.0" layoutY="507.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
          <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <Label layoutX="13.0" layoutY="209.0" text="Função">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <Label layoutX="16.0" layoutY="260.0" text="Salario">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <Label layoutX="10.0" layoutY="309.0" text="Email">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <Label layoutX="9.0" layoutY="356.0" text="Telefone">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <TextField layoutX="87.0" layoutY="59.0" text="Nome completo" />
-      <TextField layoutX="87.0" layoutY="108.0" text="###.###.###-##" />
-      <TextField layoutX="190.0" layoutY="156.0" text="DD/MM/AAAA" />
-      <TextField layoutX="99.0" layoutY="260.0" text="Salario" />
-      <TextField layoutX="99.0" layoutY="309.0" text="Email" />
-      <TextField layoutX="99.0" layoutY="356.0" text="Telefone" />
-      <ComboBox layoutX="115.0" layoutY="209.0" prefWidth="150.0" />
-      <Button layoutX="636.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="103.0" text="Salvar">
-         <font>
-            <Font name="Arial" size="18.0" />
+            <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
          </font>
       </Button>
-      <Button layoutX="636.0" layoutY="371.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="103.0" text="Cancelar">
+      <Button alignment="CENTER_RIGHT" font="$x3" layoutX="752.0" layoutY="431.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar" />
+      <Button alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="359.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
+      <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
+      <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
+      <Text layoutX="45.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
          <font>
-            <Font name="Arial" size="18.0" />
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x21" />
          </font>
-      </Button>
-      <Button layoutX="636.0" layoutY="428.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="103.0" text="Limpar">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Button>
-      <MenuBar layoutX="-1.0" layoutY="2.0" prefHeight="25.0" prefWidth="817.0" style="-fx-background-color: #ff7373;">
-        <menus>
-          <Menu mnemonicParsing="false" text="Pedidos" />
-          <Menu mnemonicParsing="false" text="Produtos" />
+      </Text>
+      <TextField fx:id="txtquant" layoutX="45.0" layoutY="152.0" prefHeight="25.0" prefWidth="149.0" text="###.###.###-##" />
+      <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="723.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconfuncionario.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
+      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="774.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconsalvar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="761.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconlimpar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="761.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconcancelar.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Produtos">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Visualizar produto" />
+                  <MenuItem mnemonicParsing="false" text="Cadastrar produto" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Pedidos" />
             <Menu mnemonicParsing="false" text="Entregas" />
-        </menus>
+         </menus>
       </MenuBar>
+      <TextField fx:id="txtquant1" layoutX="375.0" layoutY="152.0" prefHeight="25.0" prefWidth="149.0" text="##/##/####" />
+      <TextField fx:id="txtvalor1" layoutX="374.0" layoutY="217.0" prefHeight="25.0" prefWidth="149.0" text="Salário" />
+      <Text font="$x2" layoutX="374.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sálario" />
+      <TextField fx:id="txtvalor2" layoutX="43.0" layoutY="287.0" prefHeight="25.0" prefWidth="149.0" text="Data Contrato" />
+      <Text font="$x2" layoutX="42.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Contrato" />
+      <TextField fx:id="txtvalor3" layoutX="375.0" layoutY="290.0" prefHeight="25.0" prefWidth="149.0" text="E-mail" />
+      <Text font="$x2" layoutX="374.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
+      <TextField fx:id="txtvalor4" layoutX="43.0" layoutY="351.0" prefHeight="25.0" prefWidth="149.0" text="(##)#####-####" />
+      <Text font="$x2" layoutX="42.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+      <TextField layoutX="514.0" layoutY="500.0" prefHeight="31.0" prefWidth="85.0" text="1º">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="379.0" layoutY="499.0" text="Complemento" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="104.0" layoutY="497.0" prefHeight="37.0" prefWidth="203.0" text="Bairro">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="499.0" text="Bairro" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="468.0" layoutY="440.0" prefHeight="37.0" prefWidth="69.0" text="Nº">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="370.0" layoutY="444.0" text="Numero" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="440.0" text="Rua" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="104.0" layoutY="438.0" prefHeight="37.0" prefWidth="203.0" text="Rua">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="26.0" layoutY="395.0" text="Endereço" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="5.0" layoutY="385.0" prefHeight="3.0" prefWidth="669.0" />
    </children>
 </AnchorPane>

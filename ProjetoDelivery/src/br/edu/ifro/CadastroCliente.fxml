@@ -9,117 +9,134 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="724.0" style="-fx-background-color: #ffdab9;" styleClass="-back" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastroClienteController">
-    <children>
-      <Label layoutX="29.0" layoutY="63.0" text="Nome" textOverrun="CLIP">
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
+   <children>
+      <TextField fx:id="txtcod" layoutX="42.0" layoutY="87.0" prefHeight="25.0" prefWidth="62.0" text="Cod" />
+      <Text layoutX="42.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
          <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font></Label>
-      <TextField layoutX="14.0" layoutY="95.0" prefHeight="33.0" prefWidth="251.0" text="Nome Completo">
-         <font>
-            <Font name="Berlin Sans FB" size="16.0" />
-         </font></TextField>
-      <Button layoutX="583.0" layoutY="396.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="137.0" text="Salvar">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font></Button>
-      <TextField layoutX="371.0" layoutY="95.0" prefHeight="25.0" prefWidth="209.0" text="(###.###.##-##)">
-         <font>
-            <Font name="Berlin Sans FB" size="16.0" />
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x2" />
          </font>
-         
-      </TextField>
-      <Label layoutX="387.0" layoutY="63.0" text="CPF" textOverrun="CLIP">
+      </Text>
+      <Text layoutX="91.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altonio Souza">
          <font>
-            <Font name="Berlin Sans FB" size="22.0" />
+            <Font size="16.0" fx:id="x1" />
          </font>
-      </Label>
-      <TextField layoutX="17.0" layoutY="191.0" prefHeight="37.0" prefWidth="165.0" text="(##) # ####-####">
+      </Text>
+      <Text font="$x1" layoutX="22.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
+      <Text font="$x2" layoutX="50.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Celular" />
+      <Text font="$x2" layoutX="374.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <TextField fx:id="txtcelular" layoutX="42.0" layoutY="220.0" prefHeight="25.0" prefWidth="149.0" text="(##)#####-####" />
+      <TextField fx:id="txtnome" layoutX="370.0" layoutY="89.0" prefHeight="25.0" prefWidth="265.0" text="Nome" />
+      <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
+      <Button alignment="CENTER_RIGHT" layoutX="753.0" layoutY="507.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
          <font>
-            <Font name="Berlin Sans FB" size="16.0" />
+            <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
          </font>
-      </TextField>
-      <Label layoutX="25.0" layoutY="154.0" text="Celular" textOverrun="CLIP">
+      </Button>
+      <Button alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="355.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
+      <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
+      <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
+      <Text layoutX="45.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
          <font>
-            <Font name="Berlin Sans FB" size="22.0" />
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x21" />
          </font>
-      </Label>
-      <Label layoutX="239.0" layoutY="154.0" text="Email" textOverrun="CLIP">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <TextField layoutX="231.0" layoutY="191.0" prefHeight="37.0" prefWidth="245.0" text=" Email">
-         <font>
-            <Font name="Berlin Sans FB" size="16.0" />
-         </font>
-      </TextField>
-      <Label layoutX="23.0" layoutY="267.0" text="Endereço" textOverrun="CLIP">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <TextField layoutX="87.0" layoutY="323.0" prefHeight="37.0" prefWidth="203.0" text="Rua">
-         <font>
-            <Font name="Berlin Sans FB" size="16.0" />
-         </font>
-      </TextField>
-      <Label layoutX="14.0" layoutY="325.0" text="Rua" textOverrun="CLIP">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <Label layoutX="342.0" layoutY="327.0" text="Numero" textOverrun="CLIP">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <TextField layoutX="441.0" layoutY="324.0" prefHeight="37.0" prefWidth="69.0" text="Nº">
-         <font>
-            <Font name="Berlin Sans FB" size="16.0" />
-         </font>
-      </TextField>
-      <Label layoutX="15.0" layoutY="384.0" text="Bairro" textOverrun="CLIP">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <TextField layoutX="87.0" layoutY="382.0" prefHeight="37.0" prefWidth="203.0" text="Bairro">
-         <font>
-            <Font name="Berlin Sans FB" size="16.0" />
-         </font>
-      </TextField>
-      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="728.0" style="-fx-background-color: #ff7373;">
-        <menus>
-          <Menu mnemonicParsing="false" text="Produtos">
+      </Text>
+      <TextField fx:id="txcpf" layoutX="42.0" layoutY="151.0" prefHeight="25.0" prefWidth="149.0" text="###.###.###-##" />
+      <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="723.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconcliente.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
+      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="774.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconsalvar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="763.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconcancelar.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Produtos">
                <items>
                   <MenuItem mnemonicParsing="false" text="Visualizar produto" />
                   <MenuItem mnemonicParsing="false" text="Cadastrar produto" />
                </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Pedidos" />
-          <Menu mnemonicParsing="false" text="Entregas" />
-        </menus>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Pedidos" />
+            <Menu mnemonicParsing="false" text="Entregas" />
+         </menus>
       </MenuBar>
-      <Label layoutX="306.0" layoutY="384.0" text="Complemento" textOverrun="CLIP">
-         <font>
-            <Font name="Berlin Sans FB" size="22.0" />
-         </font>
-      </Label>
-      <TextField layoutX="441.0" layoutY="385.0" prefHeight="31.0" prefWidth="112.0" text="1º">
+      <TextField fx:id="txtemail" layoutX="370.0" layoutY="220.0" prefHeight="25.0" prefWidth="149.0" text="E-mail" />
+      <Text font="$x2" layoutX="372.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
+      <TextField fx:id="txtcomp" layoutX="527.0" layoutY="492.0" prefHeight="31.0" prefWidth="85.0" text="1º">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
          </font>
       </TextField>
-      <Button layoutX="583.0" layoutY="339.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="137.0" text="Cancelar">
+      <Label layoutX="380.0" layoutY="495.0" text="Complemento" textOverrun="CLIP">
          <font>
-            <Font name="Arial" size="18.0" />
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbairro" layoutX="104.0" layoutY="489.0" prefHeight="37.0" prefWidth="203.0" text="Bairro">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="495.0" text="Bairro" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnum" layoutX="468.0" layoutY="419.0" prefHeight="37.0" prefWidth="69.0" text="Nº">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="372.0" layoutY="425.0" text="Numero" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="425.0" text="Rua" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtrua" layoutX="104.0" layoutY="419.0" prefHeight="37.0" prefWidth="203.0" text="Rua">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="27.0" layoutY="382.0" text="Endereço" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="4.0" layoutY="358.0" prefHeight="3.0" prefWidth="670.0" />
+      <TextField fx:id="txtrg" layoutX="370.0" layoutY="151.0" prefHeight="25.0" prefWidth="149.0" text="########-##" />
+      <Text layoutX="370.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RG">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x211" />
+         </font>
+      </Text>
+      <TextField fx:id="txtcidade" layoutX="42.0" layoutY="291.0" prefHeight="25.0" prefWidth="149.0" text="Cidade" />
+      <Text font="$x2" layoutX="50.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" />
+      <TextField fx:id="txtuf" layoutX="370.0" layoutY="294.0" prefHeight="25.0" prefWidth="76.0" text="UF" />
+      <Text font="$x2" layoutX="378.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF" />
+      <Button alignment="CENTER_RIGHT" layoutX="753.0" layoutY="429.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="583.0" layoutY="283.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="137.0" text="Novo">
-         <font>
-            <Font name="Arial" size="18.0" />                 
-         </font>
-      </Button>
-    </children>
+      <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="760.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconlimpar.jpg" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
