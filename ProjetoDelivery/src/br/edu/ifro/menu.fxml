@@ -90,7 +90,7 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="btnexit" alignment="BASELINE_RIGHT" contentDisplay="TOP" layoutX="834.0" layoutY="513.0" mnemonicParsing="false" onAction="#exit" prefHeight="61.0" prefWidth="133.0" text="SAIR" textFill="#b21515">
+      <Button fx:id="btnexit" alignment="BASELINE_RIGHT" contentDisplay="TOP" layoutX="834.0" layoutY="513.0" mnemonicParsing="false" onAction="#exit" prefHeight="61.0" prefWidth="133.0" style="-fx-border-color: #611818; -fx-background-color: #d6c5c5;" text="SAIR" textFill="#b21515">
          <font>
             <Font size="14.0" />
          </font></Button>

@@ -14,7 +14,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
   <children>
-    <TextField layoutX="37.0" layoutY="118.0" />
+    <TextField fx:id="txtcod" layoutX="37.0" layoutY="118.0" />
     <Text layoutX="37.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
       <font>
         <Font name="Berlin Sans FB" size="18.0" fx:id="x2" />
@@ -26,58 +26,40 @@
       </font>
     </Text>
     <Text font="$x1" layoutX="25.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
-    <Text font="$x2" layoutX="366.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
-    <TextField layoutX="369.0" layoutY="120.0" prefHeight="25.0" prefWidth="265.0" />
     <Text font="$x2" layoutX="36.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" />
     <Text font="$x2" layoutX="366.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
-    <Text font="$x2" layoutX="372.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto" />
-    <TextField layoutX="37.0" layoutY="268.0" prefHeight="25.0" prefWidth="96.0" />
-    <TextField layoutX="368.0" layoutY="268.0" prefHeight="25.0" prefWidth="265.0" />
+    <Text font="$x2" layoutX="369.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto" />
+    <TextField fx:id="txtvalor" layoutX="37.0" layoutY="268.0" prefHeight="25.0" prefWidth="96.0" />
+    <TextField fx:id="txtprod" layoutX="365.0" layoutY="120.0" prefHeight="25.0" prefWidth="265.0" />
     <Text font="$x2" layoutX="35.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
-    <TextArea layoutX="30.0" layoutY="399.0" prefHeight="94.0" prefWidth="359.0" />
+    <TextArea fx:id="txtdesc" layoutX="30.0" layoutY="399.0" prefHeight="94.0" prefWidth="359.0" />
     <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
-    <Button alignment="BOTTOM_CENTER" layoutX="753.0" layoutY="473.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="112.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg;" text="Salvar " textFill="#47504d">
+    <Button fx:id="btnsalvar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="507.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
       <font>
-        <Font size="19.0" fx:id="x3" />
+        <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
       </font>
     </Button>
-    <Button font="$x3" layoutX="753.0" layoutY="404.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Limpar" />
-    <Button font="$x3" layoutX="753.0" layoutY="349.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Cancelar " />
+    <Button fx:id="btnlimpar" alignment="CENTER_RIGHT" font="$x3" layoutX="752.0" layoutY="431.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar" />
+    <Button fx:id="btnexit" alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="359.0" mnemonicParsing="false" onAction="#exit" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
     <ComboBox layoutX="366.0" layoutY="193.0" prefHeight="21.0" prefWidth="171.921875" promptText="Bebida" />
     <Text font="$x2" layoutX="50.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status do produto:" />
-    <RadioButton layoutX="245.0" layoutY="328.0" mnemonicParsing="false" text="Disponivel">
+    <RadioButton layoutX="245.0" layoutY="328.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="120.0" text="Disponivel">
       <font>
-        <Font size="15.0" fx:id="x4" />
+        <Font name="Berlin Sans FB" size="18.0" fx:id="x4" />
       </font>
     </RadioButton>
-    <RadioButton font="$x4" layoutX="409.0" layoutY="326.0" mnemonicParsing="false" text="Indisponivel" />
+    <RadioButton layoutX="409.0" layoutY="326.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="138.0" text="Indisponivel">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></RadioButton>
     <Separator layoutX="0.0" layoutY="66.0" prefHeight="3.0" prefWidth="677.0" />
-    <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="949.0" style="-fx-background-color: #ff7373;">
-      <menus>
-        <Menu mnemonicParsing="false" text="File">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Close" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Delete" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About" />
-          </items>
-        </Menu>
-      </menus>
-    </MenuBar>
       <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
       <Text layoutX="35.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade">
          <font>
             <Font name="Berlin Sans FB" size="18.0" fx:id="x21" />
          </font>
       </Text>
-      <TextField layoutX="37.0" layoutY="191.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="txtquant" layoutX="37.0" layoutY="191.0" prefHeight="25.0" prefWidth="74.0" />
       <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="723.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/coca.jpg" />
@@ -86,5 +68,32 @@
       <Separator layoutX="-1.0" layoutY="359.0" prefHeight="3.0" prefWidth="677.0" />
       <Separator layoutX="5.0" layoutY="313.0" prefHeight="3.0" prefWidth="668.0" />
       <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
+      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="774.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconsalvar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="761.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconlimpar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="761.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconcancelar.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Produtos">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Visualizar produto" />
+                  <MenuItem mnemonicParsing="false" text="Cadastrar produto" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Pedidos" />
+            <Menu mnemonicParsing="false" text="Entregas" />
+         </menus>
+      </MenuBar>
   </children>
 </AnchorPane>
