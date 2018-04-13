@@ -89,7 +89,7 @@
             <Font name="Berlin Sans FB" size="16.0" />
          </font>
       </TextField>
-      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="728.0">
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="728.0" style="-fx-background-color: #ff7373;">
         <menus>
           <Menu mnemonicParsing="false" text="Produtos">
                <items>

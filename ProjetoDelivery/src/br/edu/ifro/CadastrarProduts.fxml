@@ -12,12 +12,12 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #D5F9EC; -fx-border-color: #611818;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarProdutsController">
   <children>
-    <TextField layoutX="93.0" layoutY="75.0" style="-fx-background-color: #E5FAF2;" />
-    <Text layoutX="22.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
+    <TextField layoutX="37.0" layoutY="118.0" />
+    <Text layoutX="37.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
       <font>
-        <Font size="18.0" fx:id="x2" />
+        <Font name="Berlin Sans FB" size="18.0" fx:id="x2" />
       </font>
     </Text>
     <Text layoutX="94.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felipe Lino">
@@ -26,16 +26,16 @@
       </font>
     </Text>
     <Text font="$x1" layoutX="25.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
-    <Text font="$x2" layoutX="27.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
-    <TextField layoutX="93.0" layoutY="124.0" />
-    <Text font="$x2" layoutX="30.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" />
-    <Text font="$x2" layoutX="367.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
-    <Text font="$x2" layoutX="373.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto" />
-    <TextField layoutX="93.0" layoutY="171.0" />
-    <TextField layoutX="470.0" layoutY="172.0" prefWidth="172.0" />
-    <Text font="$x2" layoutX="41.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
-    <TextArea layoutX="40.0" layoutY="323.0" prefHeight="94.0" prefWidth="359.0" />
-    <Text font="$x2" layoutX="753.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
+    <Text font="$x2" layoutX="366.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+    <TextField layoutX="369.0" layoutY="120.0" prefHeight="25.0" prefWidth="265.0" />
+    <Text font="$x2" layoutX="36.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" />
+    <Text font="$x2" layoutX="366.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
+    <Text font="$x2" layoutX="372.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produto" />
+    <TextField layoutX="37.0" layoutY="268.0" prefHeight="25.0" prefWidth="96.0" />
+    <TextField layoutX="368.0" layoutY="268.0" prefHeight="25.0" prefWidth="265.0" />
+    <Text font="$x2" layoutX="35.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
+    <TextArea layoutX="30.0" layoutY="399.0" prefHeight="94.0" prefWidth="359.0" />
+    <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
     <Button alignment="BOTTOM_CENTER" layoutX="753.0" layoutY="473.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="112.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg;" text="Salvar " textFill="#47504d">
       <font>
         <Font size="19.0" fx:id="x3" />
@@ -43,18 +43,16 @@
     </Button>
     <Button font="$x3" layoutX="753.0" layoutY="404.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Limpar" />
     <Button font="$x3" layoutX="753.0" layoutY="349.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" text="Cancelar " />
-    <ComboBox layoutX="470.0" layoutY="127.0" prefHeight="21.0" prefWidth="171.921875" promptText="Bebida" />
-    <Text font="$x2" layoutX="58.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status do produto:" />
-    <RadioButton layoutX="253.0" layoutY="229.0" mnemonicParsing="false" text="Disponivel">
+    <ComboBox layoutX="366.0" layoutY="193.0" prefHeight="21.0" prefWidth="171.921875" promptText="Bebida" />
+    <Text font="$x2" layoutX="50.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status do produto:" />
+    <RadioButton layoutX="245.0" layoutY="328.0" mnemonicParsing="false" text="Disponivel">
       <font>
         <Font size="15.0" fx:id="x4" />
       </font>
     </RadioButton>
-    <RadioButton font="$x4" layoutX="417.0" layoutY="227.0" mnemonicParsing="false" text="Indisponivel" />
-    <Separator layoutX="3.0" layoutY="213.0" prefHeight="0.0" prefWidth="677.0" />
-    <Separator layoutX="3.0" layoutY="265.0" prefHeight="3.0" prefWidth="900.0" />
+    <RadioButton font="$x4" layoutX="409.0" layoutY="326.0" mnemonicParsing="false" text="Indisponivel" />
     <Separator layoutX="0.0" layoutY="66.0" prefHeight="3.0" prefWidth="677.0" />
-    <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="900.0">
+    <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="949.0" style="-fx-background-color: #ff7373;">
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
@@ -73,17 +71,20 @@
         </Menu>
       </menus>
     </MenuBar>
-      <Separator layoutX="562.0" layoutY="147.0" prefHeight="3.0" prefWidth="236.0" rotate="90.0" />
-      <Text layoutX="370.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade">
+      <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
+      <Text layoutX="35.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade">
          <font>
-            <Font size="18.0" fx:id="x21" />
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x21" />
          </font>
       </Text>
-      <TextField layoutX="471.0" layoutY="85.0" prefHeight="25.0" prefWidth="65.0" />
-      <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="690.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+      <TextField layoutX="37.0" layoutY="191.0" prefHeight="25.0" prefWidth="74.0" />
+      <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="723.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/coca.jpg" />
          </image>
       </ImageView>
+      <Separator layoutX="-1.0" layoutY="359.0" prefHeight="3.0" prefWidth="677.0" />
+      <Separator layoutX="5.0" layoutY="313.0" prefHeight="3.0" prefWidth="668.0" />
+      <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
   </children>
 </AnchorPane>
