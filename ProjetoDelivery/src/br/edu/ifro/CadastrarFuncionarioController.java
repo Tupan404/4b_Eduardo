@@ -1,4 +1,4 @@
-/*package br.edu.ifro;
+package br.edu.ifro;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -12,7 +12,7 @@ import javafx.scene.text.Font;
 import javax.swing.JOptionPane;
 
 
-public class CadastrarFuncionarioController implements Initializable {
+/*public class CadastrarFuncionarioController implements Initializable {
 
      @FXML
     private Button btncancelar;
