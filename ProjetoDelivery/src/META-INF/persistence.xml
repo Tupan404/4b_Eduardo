@@ -6,6 +6,7 @@
     <!-- Aqui são listadas todas as entidades -->
     <class>br.edu.ifro.Aluno</class>
     <class>br.edu.ifro.Cliente</class>
+    <class>br.edu.ifro.Funcionario</class>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
       <!-- Banco de dados host/database -->

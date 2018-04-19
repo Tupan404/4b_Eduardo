@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastrarFuncionarioController">
    <children>
-      <TextField fx:id="txtcod" layoutX="42.0" layoutY="87.0" prefHeight="25.0" prefWidth="62.0" text="Cod" />
+      <TextField fx:id="txtcod" editable="false" layoutX="45.0" layoutY="89.0" prefHeight="25.0" prefWidth="62.0" text="01" />
       <Text layoutX="42.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo">
          <font>
             <Font name="Berlin Sans FB" size="18.0" fx:id="x2" />
@@ -28,7 +28,7 @@
       <TextField fx:id="txtfunc" layoutX="42.0" layoutY="217.0" prefHeight="25.0" prefWidth="149.0" text="Função" />
       <TextField fx:id="txtnome" layoutX="370.0" layoutY="89.0" prefHeight="25.0" prefWidth="265.0" text="Nome" />
       <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
-      <Button alignment="CENTER_RIGHT" layoutX="753.0" layoutY="507.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
+      <Button fx:id="btnsalvar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="507.0" mnemonicParsing="false" onAction="#salvar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
          <font>
             <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
          </font>
@@ -85,12 +85,12 @@
       <Text font="$x2" layoutX="374.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
       <TextField fx:id="txttel" layoutX="43.0" layoutY="351.0" prefHeight="25.0" prefWidth="149.0" text="(##)#####-####" />
       <Text font="$x2" layoutX="42.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
-      <TextField fx:id="txtcomp" layoutX="514.0" layoutY="500.0" prefHeight="31.0" prefWidth="85.0" text="1º">
+      <TextField fx:id="txtcomp" layoutX="523.0" layoutY="497.0" prefHeight="31.0" prefWidth="85.0" text="1º">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
          </font>
       </TextField>
-      <Label layoutX="379.0" layoutY="499.0" text="Complemento" textOverrun="CLIP">
+      <Label layoutX="370.0" layoutY="499.0" text="Complemento" textOverrun="CLIP">
          <font>
             <Font name="Berlin Sans FB" size="22.0" />
          </font>
