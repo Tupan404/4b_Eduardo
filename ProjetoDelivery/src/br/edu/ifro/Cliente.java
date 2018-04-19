@@ -19,9 +19,43 @@ public class Cliente {
     private String cliente_nome;
     private String cliente_cpf;
     private String cliente_rg;
-    private String cliente_endereco;
+    private String cliente_cidade;
+    private String cliente_uf;
+    private String cliente_numeroCasa;
+    private String cliente_ruaEndereco;
     private String cliente_celular;
     
+    void setRua (String rua){
+        cliente_ruaEndereco = rua;
+    }
+    
+    String getRua (){
+        return cliente_ruaEndereco;
+    }
+    
+    void setNumeroCasa (String numero){
+        cliente_numeroCasa = numero;
+    }
+    
+    String getNumero (){
+        return cliente_numeroCasa ;
+    }
+   
+   void setCliente_cidade(String cidade){
+       this.cliente_cidade = cidade;
+   }
+   
+   String getCliente_cidade(){
+       return cliente_cidade;
+   }
+   
+   void setCliente_Uf (String uf ){
+       this.cliente_uf = uf;
+   }
+   String getUf (){
+       return cliente_uf;
+   }
+   
      
       public Integer getId() {
         return id;
@@ -37,27 +71,22 @@ public class Cliente {
     private String getNome (){
         return this.cliente_nome;
     }
-    private void setCpf (String cpf){
+    void setCpf (String cpf){
         this.cliente_cpf = cpf;
     }
     private String getCpf (){
         return this.cliente_cpf;
     }
     
-    private void setRg (String rg) {
+    void setRg (String rg) {
         this.cliente_rg = rg;
     }
     private String getRg (){
         return this.cliente_rg ;
        }
     
-    private void setEndereco (String endereco){
-        this.cliente_endereco = endereco;
-    }    
-    private String getEndereco (){
-        return this.cliente_endereco;
-    }
-    private void setCelular (String celular){
+   
+    void setCelular (String celular){
         this.cliente_celular = celular;
     }
     private String getCelular (){

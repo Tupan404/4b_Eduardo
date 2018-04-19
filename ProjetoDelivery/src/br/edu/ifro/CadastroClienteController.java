@@ -29,19 +29,11 @@ public class CadastroClienteController implements Initializable {
     @FXML
     private TextField txtcod;
     @FXML
-    private Font x2;
-    @FXML
-    private Font x1;
-    @FXML
     private TextField txtcelular;
     @FXML
     private TextField txtnome;
     @FXML
-    private Font x3;
-    @FXML
-    private Font x21;
-    @FXML
-    private TextField txcpf;
+    private TextField txtcpf;
     @FXML
     private TextField txtemail;
     @FXML
@@ -55,30 +47,32 @@ public class CadastroClienteController implements Initializable {
     @FXML
     private TextField txtrg;
     @FXML
-    private Font x211;
-    @FXML
     private TextField txtcidade;
     @FXML
     private TextField txtuf;
     @FXML
     private Button btnsalvar;
     
+   
     @FXML 
     private void salvar (){
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("Delivery");
         EntityManager em = emf.createEntityManager();
         
-        Cliente a = new Cliente();
+        Cliente Cliente = new Cliente();
         
-       /* a.setNome(txtnome.getText());
-        a.setCpf(txcpf.getText());
-        a.setRg(txt)
-        a.setEndereco
-        a.setCelular
+        Cliente.setNome(txtnome.getText());
+        Cliente.setCpf (txtcpf.getText());
+        Cliente.setRg(txtrg.getText());
+        Cliente.setCliente_cidade (txtnum.getText());
+        Cliente.setCliente_Uf (txtuf.getText());
+        Cliente.setRua(txtrua.getText());
+        Cliente.setNumeroCasa (txtnum.getText());
+        Cliente.setCelular (txtcelular.getText());
         em.getTransaction().begin();
-        em.persist(a);
-        em.getTransaction().commit();*/
+        em.persist(Cliente);
+        em.getTransaction().commit();
     
     }    
     
