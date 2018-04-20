@@ -10,10 +10,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.swing.JOptionPane;
 
 
@@ -21,28 +25,25 @@ public class CadastrarProdutsController implements Initializable {
 
      @FXML
     private Button btnexit;
-    @FXML
-    private Font x2;
-    @FXML
-    private Font x1;
-    @FXML
-    private Font x3;
-    @FXML
+       @FXML
     private Button btnlimpar;
     @FXML
-    private Font x4;
-    @FXML
+    private RadioButton  status, status1;
+     @FXML
     private TextField txtcod;
     @FXML
     private TextField txtvalor;
     @FXML
-    private TextField txtprod;
+    private TextField txtproduto;
     @FXML
-    private TextArea txtdesc;
-    private TextField txtquant;
+    private TextArea txtdescricao;
     @FXML
     private Button btnsalvar;
      @FXML
+     
+     
+     
+     
     private void exit(ActionEvent e) {
         
      if  (e.getSource() == btnexit)
@@ -66,10 +67,11 @@ public class CadastrarProdutsController implements Initializable {
 
     private void limpar() {
    	txtcod.setText("");
-	txtprod.setText("");
+	txtproduto.setText("");
         txtvalor.setText("");
-        txtdesc.setText("");
-    
+        txtdescricao.setText("");
+        status.setSelected(false);
+        status1.setSelected(false);
 }
 
     @FXML
@@ -79,6 +81,20 @@ public class CadastrarProdutsController implements Initializable {
    
         
     }
+    }
+    
+    private void SalvarProduto (){
+          EntityManagerFactory emf = Persistence.createEntityManagerFactory("Delivery");
+        EntityManager em = emf.createEntityManager();
+         Produts Produts = new Produts();
+          Produts.setProduto(txtproduto.getText());
+           Produts.setDescricao(txtdescricao.getText());
+            Produts.setProduto(txtproduto.getText());
+         Produts.setValor(txtvalor.getText());
+         em.getTransaction().begin();
+        em.persist(Produts);
+        em.getTransaction().commit();
+        
     }
     
 }
