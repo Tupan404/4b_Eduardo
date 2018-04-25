@@ -107,7 +107,7 @@ public class MenuController implements Initializable {
     }
 
     private void setResizable(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       setResizable(false);
     }
     
    
