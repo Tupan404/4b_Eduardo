@@ -39,7 +39,7 @@
             <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
          </font>
       </Button>
-      <Button alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="355.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
+      <Button fx:id="btnexit" alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="355.0" mnemonicParsing="false" onAction="#sair" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
       <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
       <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
       <Text layoutX="45.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
@@ -158,7 +158,7 @@
          <font>
             <Font size="18.0" />
          </font></Text>
-      <Button alignment="CENTER_RIGHT" layoutX="753.0" layoutY="429.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar">
+      <Button fx:id="btnlimpar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="429.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>

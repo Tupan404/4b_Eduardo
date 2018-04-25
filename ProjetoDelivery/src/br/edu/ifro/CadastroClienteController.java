@@ -27,8 +27,6 @@ public class CadastroClienteController implements Initializable {
     
     private Label label;
     @FXML
-    private TextField txtcod;
-    @FXML
     private TextField txtcelular;
     @FXML
     private TextField txtnome;
@@ -52,7 +50,21 @@ public class CadastroClienteController implements Initializable {
     private TextField txtuf;
     @FXML
     private Button btnsalvar;
+    @FXML
+    private Button btnlimpar;
+    @FXML
+    private Button btnexit;
+    @FXML
+    private Font x1;
+    @FXML
+    private Font x3;
+    @FXML
+    private Font x21;
+    @FXML
+    private Font x211;
     
+  
+
    
     @FXML 
     private void salvar (){
@@ -80,5 +92,34 @@ public class CadastroClienteController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
       
     }    
+
+    @FXML
+    private void sair(ActionEvent event ) {
+           if  (event.getSource() == btnexit){
+	System.exit(0);
+    }
     
+    }
+
+    @FXML
+    private void limpar(ActionEvent event) {
+        if (event.getSource () == btnlimpar){
+        txtcpf.setText("");
+        txtcelular.setText("");
+        txtnome.setText("");
+        txtemail.setText("");
+        txtnome.setText("");
+        txtcomp.setText("");
+        txtbairro.setText("");
+        txtemail.setText("");
+        txtrua.setText("");
+        txtbairro.setText("");
+        txtnum.setText("");
+        txtcomp.setText("");
+        txtrg.setText("");
+        txtcidade.setText("");  
+        txtuf.setText("");        
+        }
+    }
 }
+
