@@ -8,8 +8,9 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
- 
-<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastroClienteController">
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="709.0" prefWidth="1046.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastroClienteController">
    <children>
       <Text layoutX="91.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altonio Souza">
          <font>
@@ -34,12 +35,12 @@
             <Font size="14.0" />
          </font></TextField>
       <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
-      <Button fx:id="btnsalvar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="509.0" mnemonicParsing="false" onAction="#salvar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
+      <Button fx:id="btnsalvar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="441.0" mnemonicParsing="false" onAction="#salvar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-image: imagens\coca.jpgcoca.jpg; -fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar " textFill="#611818">
          <font>
             <Font name="Berlin Sans FB" size="19.0" fx:id="x3" />
          </font>
       </Button>
-      <Button fx:id="btnexit" alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="355.0" mnemonicParsing="false" onAction="#sair" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
+      <Button fx:id="btnexit" alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="267.0" mnemonicParsing="false" onAction="#sair" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
       <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
       <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
       <Text layoutX="45.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
@@ -57,12 +58,12 @@
          </image>
       </ImageView>
       <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
-      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="774.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="763.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/iconsalvar.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="763.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="753.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/iconcancelar.png" />
          </image>
@@ -158,15 +159,43 @@
          <font>
             <Font size="18.0" />
          </font></Text>
-      <Button fx:id="btnlimpar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="429.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar">
+      <Button fx:id="btnlimpar" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="355.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>
       </Button>
-      <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="760.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="763.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/iconlimpar.jpg" />
          </image>
       </ImageView>
+      
+      
+       <TableView fx:id="tbcliente" layoutX="674.0" layoutY="508.0" prefHeight="200.0" prefWidth="200.0">
+           
+        <columns> 
+            
+             <!-- Coluna id -->
+          <TableColumn prefWidth="75.0" text="ID" >
+              
+            <cellValueFactory>
+              <PropertyValueFactory property = "id" /> 
+               </cellValueFactory>
+        </TableColumn>  
+                  <!-- Coluna id -->
+                  
+              <!-- Coluna nome-->  
+            
+             <!-- Coluna id -->
+          <TableColumn prefWidth="75.0" text="ID" >
+              
+            <cellValueFactory>
+              <PropertyValueFactory property = "nome" /> 
+               </cellValueFactory>
+        </TableColumn>  
+           <!-- Coluna nome -->
+
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
