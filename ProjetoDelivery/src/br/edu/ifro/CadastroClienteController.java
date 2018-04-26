@@ -6,17 +6,22 @@
 package br.edu.ifro;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import javax.swing.JOptionPane;
 
 /**
@@ -88,11 +93,21 @@ public class CadastroClienteController implements Initializable {
     
     }    
     
+    @FXML 
+    private TableView tbcliente;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      
+      List<Cliente> clientes = buscarCliente();
+        ObservableList<Cliente> obCliente =  FXCollections.observableArrayList(clientes);
+      tbcliente.setItems(obCliente);
     }    
-
+private List<Cliente> buscarCliente (){
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("Delivery");
+     EntityManager em = emf.createEntityManager();
+     Query query = em.createQuery("SELECT  a from Cliente a ");
+     List<Cliente> Cliente = query.getResultList ();
+     return Cliente;
+}
     @FXML
     private void sair(ActionEvent event ) {
            if  (event.getSource() == btnexit){
