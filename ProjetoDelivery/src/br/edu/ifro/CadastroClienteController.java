@@ -97,17 +97,19 @@ public class CadastroClienteController implements Initializable {
     private TableView tbcliente;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      List<Cliente> clientes = buscarCliente();
+        List<Cliente> clientes = buscarCliente();
         ObservableList<Cliente> obCliente =  FXCollections.observableArrayList(clientes);
-      tbcliente.setItems(obCliente);
+        tbcliente.setItems(obCliente);
     }    
-private List<Cliente> buscarCliente (){
-    EntityManagerFactory emf = Persistence.createEntityManagerFactory("Delivery");
-     EntityManager em = emf.createEntityManager();
-     Query query = em.createQuery("SELECT  a from Cliente a ");
-     List<Cliente> Cliente = query.getResultList ();
-     return Cliente;
-}
+    private List<Cliente> buscarCliente (){
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Delivery");
+         EntityManager em = emf.createEntityManager();
+         Query query = em.createQuery("SELECT a FROM Cliente a");
+         List<Cliente> clientes = query.getResultList ();
+         em.close();
+         emf.close();
+         return clientes;
+    }
     @FXML
     private void sair(ActionEvent event ) {
            if  (event.getSource() == btnexit){

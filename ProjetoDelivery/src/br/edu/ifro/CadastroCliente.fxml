@@ -8,6 +8,7 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
 
 <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="709.0" prefWidth="1046.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastroClienteController">
    <children>
@@ -168,10 +169,32 @@
             <Image url="@imagens/iconlimpar.jpg" />
          </image>
       </ImageView>
-      <TableView layoutX="674.0" layoutY="508.0" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+      
+      
+       <TableView fx:id="tbcliente" layoutX="674.0" layoutY="508.0" prefHeight="200.0" prefWidth="200.0">
+           
+        <columns> 
+            
+             <!-- Coluna id -->
+          <TableColumn prefWidth="75.0" text="ID" >
+              
+            <cellValueFactory>
+              <PropertyValueFactory property = "id" /> 
+               </cellValueFactory>
+        </TableColumn>  
+                  <!-- Coluna id -->
+                  
+              <!-- Coluna nome-->  
+            
+             <!-- Coluna id -->
+          <TableColumn prefWidth="75.0" text="ID" >
+              
+            <cellValueFactory>
+              <PropertyValueFactory property = "nome" /> 
+               </cellValueFactory>
+        </TableColumn>  
+           <!-- Coluna nome -->
+
         </columns>
       </TableView>
    </children>

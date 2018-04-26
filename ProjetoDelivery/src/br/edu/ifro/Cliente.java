@@ -16,7 +16,7 @@ public class Cliente {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String cliente_nome;
+    private String nome;
     private String cliente_cpf;
     private String cliente_rg;
     private String cliente_cidade;
@@ -66,10 +66,10 @@ public class Cliente {
     }
     
     void setNome (String nome){
-         this.cliente_nome = nome;
+         this.nome = nome;
     }
     private String getNome (){
-        return this.cliente_nome;
+        return this.nome;
     }
     void setCpf (String cpf){
         this.cliente_cpf = cpf;
