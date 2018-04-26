@@ -37,6 +37,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private void acessar(ActionEvent event) {
+        
           try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();

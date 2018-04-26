@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="386.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="386.0" styleClass="tela" stylesheets="@CssStyles/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.LoginController">
    <children>
       <ImageView fitHeight="222.0" fitWidth="289.0" layoutX="48.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -26,7 +26,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="acessar" alignment="CENTER_RIGHT" layoutX="229.0" layoutY="452.0" mnemonicParsing="false" onAction="#acessar" prefHeight="62.0" prefWidth="127.0" style="-fx-background-color: #ffffff;" text="Acessar" />
+      <Button fx:id="acessar" alignment="CENTER_RIGHT" layoutX="229.0" layoutY="452.0" mnemonicParsing="false" onAction="#acessar" prefHeight="62.0" prefWidth="127.0" style="-fx-background-color: #ffffff;" styleClass="botao" stylesheets="@CssStyles/Login.css" text="Acessar" />
       <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="239.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/acessar.png" />
