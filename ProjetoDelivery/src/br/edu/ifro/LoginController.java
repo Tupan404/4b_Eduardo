@@ -5,6 +5,7 @@
  */
 package br.edu.ifro;
 
+import java.awt.Image;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,6 +15,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -25,14 +29,19 @@ public class LoginController implements Initializable {
 
     @FXML
     private Button acessar;
+    @FXML
+    private Button btncancelar;
+    @FXML
+    private AnchorPane principal;
 
    
     
     
     
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+     
     }    
 
     @FXML
@@ -49,5 +58,27 @@ public class LoginController implements Initializable {
           }
 	
     }
+
+    @FXML
+    private void cancelar(ActionEvent event) {
+         Stage stage = (Stage) btncancelar.getScene().getWindow();
+         stage.close();
+    }
+
+    @FXML
+    private void principal(MouseEvent event) {
+     
+    }
+    
+     public void start(Stage stage) {
+          StackPane root = new StackPane();
+        // set icon
+        stage.getIcons().add(new javafx.scene.image.Image("imagens\\logo.png"));
+        stage.setTitle("Wow!! Stackoverflow Icon");
+        stage.setScene(new Scene(root, 300, 250));
+        stage.show();
+     }
+    
+   
     
 }

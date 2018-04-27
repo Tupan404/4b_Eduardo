@@ -102,8 +102,8 @@ public class MenuController implements Initializable {
     @FXML
     private void exit(ActionEvent e) {
         
-     if  (e.getSource() == btnexit)
-	System.exit(0);
+      Stage stage = (Stage) btnexit.getScene().getWindow();
+         stage.close();
     }
 
     private void setResizable(boolean b) {
