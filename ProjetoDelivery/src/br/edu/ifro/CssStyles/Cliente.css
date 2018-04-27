@@ -1,3 +1,18 @@
 .botao-pesquisar {
-    -fx-background-image: url("lupa.png");
+    -fx-background-image: url("br.edu.ifro.images/lupa.png");
+}
+
+.botaoSalvar {
+    
+}
+
+.botaoCancelar {
+    
+}
+
+.botaoEditar {
+    
+}
+.botaoExcluir {
+    
 }
