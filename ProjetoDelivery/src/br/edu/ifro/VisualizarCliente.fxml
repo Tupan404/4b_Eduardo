@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="601.0" prefWidth="953.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.VisualizarClienteController">
+   <children>
+      <Text layoutX="91.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altonio Souza">
+         <font>
+            <Font size="16.0" fx:id="x1" />
+         </font>
+      </Text>
+      <Text font="$x1" layoutX="22.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
+      <Text layoutX="50.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Celular">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="47.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtcelular" layoutX="42.0" layoutY="220.0" prefHeight="25.0" prefWidth="149.0" text="(##)#####-####">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="txtnome" layoutX="42.0" layoutY="87.0" prefHeight="25.0" prefWidth="265.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
+      <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
+      <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
+      <Text layoutX="45.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x21" />
+         </font>
+      </Text>
+      <TextField fx:id="txtcpf" layoutX="42.0" layoutY="151.0" prefHeight="25.0" prefWidth="149.0" text="###.###.###-##">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="723.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/iconcliente.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Produtos">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Visualizar produto" />
+                  <MenuItem mnemonicParsing="false" text="Cadastrar produto" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Pedidos" />
+            <Menu mnemonicParsing="false" text="Entregas" />
+         </menus>
+      </MenuBar>
+      <TextField fx:id="txtemail" layoutX="370.0" layoutY="220.0" prefHeight="25.0" prefWidth="149.0" text="E-mail">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Text layoutX="372.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtcomp" layoutX="527.0" layoutY="492.0" prefHeight="31.0" prefWidth="85.0" text="1º">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="380.0" layoutY="495.0" text="Complemento" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbairro" layoutX="104.0" layoutY="489.0" prefHeight="37.0" prefWidth="203.0" text="Bairro">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="495.0" text="Bairro" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnum" layoutX="468.0" layoutY="419.0" prefHeight="37.0" prefWidth="69.0" text="Nº">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="372.0" layoutY="425.0" text="Numero" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="425.0" text="Rua" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtrua" layoutX="104.0" layoutY="419.0" prefHeight="37.0" prefWidth="203.0" text="Rua">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="27.0" layoutY="382.0" text="Endereço" textOverrun="CLIP">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="4.0" layoutY="358.0" prefHeight="3.0" prefWidth="670.0" />
+      <TextField fx:id="txtrg" layoutX="370.0" layoutY="151.0" prefHeight="25.0" prefWidth="149.0" text="########-##">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Text layoutX="370.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RG">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" fx:id="x211" />
+         </font>
+      </Text>
+      <TextField fx:id="txtcidade" layoutX="42.0" layoutY="291.0" prefHeight="30.0" prefWidth="172.0" text="Cidade">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Text layoutX="50.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtuf" layoutX="370.0" layoutY="294.0" prefHeight="25.0" prefWidth="76.0" text="UF">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Text layoutX="378.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Button fx:id="alterarImagem" layoutX="746.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Alterar Imagem" />
+      <Button fx:id="btnsalvar" layoutX="776.0" layoutY="312.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <Button fx:id="btneditar" layoutX="776.0" layoutY="373.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+      <Button fx:id="btncancelar" layoutX="787.0" layoutY="413.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="btnexcluir" layoutX="776.0" layoutY="464.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+   </children>
+</AnchorPane>
