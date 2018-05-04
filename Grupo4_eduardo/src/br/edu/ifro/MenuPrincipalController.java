@@ -47,4 +47,12 @@ public class MenuPrincipalController implements Initializable {
         // TODO
     }    
 
+    @FXML
+    private void abrirCadastroAluno(ActionEvent event) {
+    }
+
+    @FXML
+    private void fecharProjeto(ActionEvent event) {
+    }
+
 }
