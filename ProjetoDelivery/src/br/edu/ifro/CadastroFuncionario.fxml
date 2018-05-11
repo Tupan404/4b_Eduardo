@@ -34,7 +34,7 @@
          </font>
       </Button>
       <Button fx:id="btnlimpar" alignment="CENTER_RIGHT" font="$x3" layoutX="752.0" layoutY="431.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar" />
-      <Button fx:id="btnexit" alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="359.0" mnemonicParsing="false" onAction="#exit" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar " />
+      <Button fx:id="btnexit" alignment="CENTER_RIGHT" font="$x3" layoutX="750.0" layoutY="359.0" mnemonicParsing="false" onAction="#exit" prefHeight="54.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" styleClass="botao-sair" stylesheets="@CssStyles/Produto.css" text="Cancelar " />
       <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
       <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
       <Text layoutX="45.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
@@ -59,7 +59,7 @@
             <Image url="@imagens/iconlimpar.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="761.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="761.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/iconcancelar.png" />
          </image>

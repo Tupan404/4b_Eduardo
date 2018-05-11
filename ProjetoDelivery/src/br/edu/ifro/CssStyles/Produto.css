@@ -1,0 +1,13 @@
+
+.botao-sair {
+   -fx-background-image: url("br.edu.ifro.images/iconcancelar.png");
+}
+
+.btnlimpar {
+      -fx-background-image: url("br.edu.ifro.images/iconlimpar.png"); 
+}
+
+
+.btnsalvar {
+     -fx-background-image: url("br.edu.ifro.images/iconsalvar.png"); 
+}
