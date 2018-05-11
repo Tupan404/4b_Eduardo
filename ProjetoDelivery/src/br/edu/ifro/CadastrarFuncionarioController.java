@@ -9,6 +9,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Font;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -54,17 +56,13 @@ public class CadastrarFuncionarioController implements Initializable {
     @FXML
     private TextField txtrua;
 
-    /* @FXML
-     private void tfCpfKey(){
-         TextFieldFormatter tff = new TextFieldFormatter ();
-         txtnum.setMask("");
-     }*/
+
      
     
      @FXML
     private void exit(ActionEvent e) {
         
-     if  (e.getSource() == btnexit)
+     if  (e.getSource() == btnexit )
 	System.exit(0);
     }
     
@@ -125,6 +123,10 @@ public class CadastrarFuncionarioController implements Initializable {
  
      
  }
+
+    @FXML
+    private void exit(MouseEvent event) {
+    }
     
 
           

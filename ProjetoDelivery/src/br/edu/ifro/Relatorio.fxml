@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="868.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.RelatorioController">
+   <children>
+      <TabPane layoutY="-2.0" prefHeight="524.0" prefWidth="902.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: #ff7373;" text="Produtos">
+               <content>
+                  <Pane prefHeight="479.0" prefWidth="887.0">
+                     <children>
+                        <Label layoutX="17.0" layoutY="34.0" text="Produtos (Geral)">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="14.0" layoutY="131.0" mnemonicParsing="false" text="Pesquisar">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="17.0" layoutY="59.0" text="Produtos de maior relevância">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="114.0" layoutY="131.0" mnemonicParsing="false" text="Imprimir">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TableView layoutX="16.0" layoutY="196.0" prefHeight="289.0" prefWidth="871.0" style="-fx-background-color: #ffdab9;">
+                          <columns>
+                            <TableColumn prefWidth="257.0" text="Produtos (Geral" />
+                            <TableColumn prefWidth="256.0" text="Produtos de maior relevância" />
+                              <TableColumn prefWidth="266.0" text="Produtos do mês" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="17.0" layoutY="84.0" text="Produtos do mês">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <RadioButton layoutX="230.0" layoutY="63.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="produto" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton layoutX="145.0" layoutY="88.0" mnemonicParsing="false" toggleGroup="$produto" />
+                        <RadioButton layoutX="135.0" layoutY="38.0" mnemonicParsing="false" toggleGroup="$produto" />
+                        <Separator layoutX="-1.0" layoutY="179.0" prefHeight="6.0" prefWidth="910.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #ff7373;" text="Clientes">
+               <content>
+                  <Pane prefHeight="479.0" prefWidth="887.0">
+                     <children>
+                        <Label layoutX="17.0" layoutY="34.0" text="Clientes do mês">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="14.0" layoutY="99.0" mnemonicParsing="false" text="Pesquisar">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="17.0" layoutY="59.0" text="Novos cadastros">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="114.0" layoutY="99.0" mnemonicParsing="false" text="Imprimir">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TableView layoutX="16.0" layoutY="196.0" prefHeight="289.0" prefWidth="871.0" style="-fx-background-color: #ffdab9;">
+                           <columns>
+                              <TableColumn editable="false" prefWidth="443.0" text="Clientes do mês" />
+                              <TableColumn editable="false" prefWidth="427.0" text="Novos cadastros" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <RadioButton layoutX="140.0" layoutY="63.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="cliente" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton layoutX="135.0" layoutY="38.0" mnemonicParsing="false" toggleGroup="$cliente" />
+                        <Separator layoutX="-1.0" layoutY="179.0" prefHeight="6.0" prefWidth="910.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
