@@ -45,11 +45,6 @@
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <ImageView fitHeight="172.0" fitWidth="172.0" layoutX="723.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@imagens/iconcliente.png" />
-         </image>
-      </ImageView>
       <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
       <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
          <menus>
@@ -142,10 +137,11 @@
          <font>
             <Font size="18.0" />
          </font></Text>
-      <Button fx:id="alterarImagem" layoutX="746.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Alterar Imagem" />
+      <Button fx:id="alterarImagem" layoutX="746.0" layoutY="228.0" mnemonicParsing="false" onAction="#alterar" prefHeight="25.0" prefWidth="127.0" text="Alterar Imagem" />
       <Button fx:id="btnsalvar" layoutX="776.0" layoutY="312.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
       <Button fx:id="btneditar" layoutX="776.0" layoutY="373.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
       <Button fx:id="btncancelar" layoutX="787.0" layoutY="413.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Button fx:id="btnexcluir" layoutX="776.0" layoutY="464.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+      <ImageView fx:id="Imagem" fitHeight="150.0" fitWidth="200.0" layoutX="713.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
