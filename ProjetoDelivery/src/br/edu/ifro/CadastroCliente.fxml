@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.cell.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="709.0" prefWidth="1046.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastroClienteController">
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="600.0" prefWidth="966.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.CadastroClienteController">
    <children>
       <Text layoutX="91.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altonio Souza">
          <font>
@@ -68,7 +68,7 @@
             <Image url="@imagens/iconcancelar.png" />
          </image>
       </ImageView>
-      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="1046.0" style="-fx-background-color: #ff7373;">
          <menus>
             <Menu mnemonicParsing="false" text="Produtos">
                <items>
@@ -169,33 +169,5 @@
             <Image url="@imagens/iconlimpar.jpg" />
          </image>
       </ImageView>
-      
-      
-       <TableView fx:id="tbcliente" layoutX="674.0" layoutY="508.0" prefHeight="200.0" prefWidth="200.0">
-           
-        <columns> 
-            
-             <!-- Coluna id -->
-          <TableColumn prefWidth="75.0" text="ID" >
-              
-            <cellValueFactory>
-              <PropertyValueFactory property = "id" /> 
-               </cellValueFactory>
-        </TableColumn>  
-                  <!-- Coluna id -->
-                  
-              <!-- Coluna nome-->  
-            
-             <!-- Coluna id -->
-          <TableColumn prefWidth="75.0" text="ID" >
-              
-            <cellValueFactory>
-              <PropertyValueFactory property = "nome" /> 
-               </cellValueFactory>
-        </TableColumn>  
-           <!-- Coluna nome -->
-
-        </columns>
-      </TableView>
    </children>
 </AnchorPane>

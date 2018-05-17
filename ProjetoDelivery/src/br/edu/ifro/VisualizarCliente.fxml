@@ -9,14 +9,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="601.0" prefWidth="953.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.VisualizarClienteController">
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" prefHeight="642.0" prefWidth="995.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.VisualizarClienteController">
    <children>
-      <Text layoutX="91.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altonio Souza">
+      <Text layoutX="90.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altonio Souza">
          <font>
             <Font size="16.0" fx:id="x1" />
          </font>
       </Text>
-      <Text font="$x1" layoutX="22.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
+      <Text font="$x1" layoutX="21.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário |" />
       <Text layoutX="50.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Celular">
          <font>
             <Font size="18.0" />
@@ -35,7 +35,7 @@
          </font></TextField>
       <Text font="$x2" layoutX="784.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagem" />
       <Separator layoutY="47.0" prefHeight="3.0" prefWidth="677.0" />
-      <Separator layoutX="403.0" layoutY="303.0" prefHeight="3.0" prefWidth="546.0" rotate="90.0" />
+      <Separator layoutX="367.0" layoutY="329.0" prefHeight="17.0" prefWidth="620.0" rotate="90.0" />
       <Text layoutX="45.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
          <font>
             <Font name="Berlin Sans FB" size="18.0" fx:id="x21" />
@@ -46,7 +46,7 @@
             <Font size="14.0" />
          </font></TextField>
       <Separator layoutX="675.0" layoutY="258.0" prefHeight="3.0" prefWidth="276.0" />
-      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="951.0" style="-fx-background-color: #ff7373;">
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="995.0" style="-fx-background-color: #ff7373;">
          <menus>
             <Menu mnemonicParsing="false" text="Produtos">
                <items>
@@ -138,10 +138,31 @@
             <Font size="18.0" />
          </font></Text>
       <Button fx:id="alterarImagem" layoutX="746.0" layoutY="228.0" mnemonicParsing="false" onAction="#alterar" prefHeight="25.0" prefWidth="127.0" text="Alterar Imagem" />
-      <Button fx:id="btnsalvar" layoutX="776.0" layoutY="312.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
-      <Button fx:id="btneditar" layoutX="776.0" layoutY="373.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
-      <Button fx:id="btncancelar" layoutX="787.0" layoutY="413.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
-      <Button fx:id="btnexcluir" layoutX="776.0" layoutY="464.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
       <ImageView fx:id="Imagem" fitHeight="150.0" fitWidth="200.0" layoutX="713.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnlimpar1" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="574.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Cancelar">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlimpar11" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="286.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Salvar">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlimpar111" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="364.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Editar">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlimpar12" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="433.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Limpar">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlimpar13" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="502.0" mnemonicParsing="false" onAction="#limpar" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #ffffff; -fx-border-color: #611818;" text="Excluir">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
