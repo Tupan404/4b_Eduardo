@@ -35,8 +35,8 @@
          <font>
             <Font name="Century Schoolbook" size="24.0" />
          </font></Button>
-      <TextField layoutX="89.0" layoutY="301.0" prefHeight="25.0" prefWidth="381.0" />
-      <PasswordField layoutX="89.0" layoutY="363.0" prefHeight="25.0" prefWidth="381.0" />
+      <TextField fx:id="txtUsusario" layoutX="89.0" layoutY="301.0" prefHeight="25.0" prefWidth="381.0" />
+      <PasswordField fx:id="txtSenha" layoutX="89.0" layoutY="363.0" prefHeight="25.0" prefWidth="381.0" />
       <Pane prefHeight="62.0" prefWidth="523.0" style="-fx-background-color: #EC4545;">
          <children>
             <Label layoutX="222.0" layoutY="12.0" text="Login" textFill="#dddddd">

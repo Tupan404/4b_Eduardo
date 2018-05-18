@@ -15,10 +15,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  * FXML Controller class
@@ -33,6 +39,10 @@ public class LoginController implements Initializable {
     private Button btncancelar;
     @FXML
     private AnchorPane principal;
+    @FXML
+    private TextField txtUsusario;
+    @FXML
+    private PasswordField txtSenha;
 
    
     
@@ -47,7 +57,28 @@ public class LoginController implements Initializable {
     @FXML
     private void acessar(ActionEvent event) {
         
-          try {
+        int usuario;
+        
+          EntityManagerFactory emf = Persistence.createEntityManagerFactory("4bgrupo4");
+          EntityManager em = emf.createEntityManager();
+          Query query = em.createQuery("Select id from funcionario WHERE txtUsuario=:user and txtSenha=:senha");
+          
+          query.setParameter("user", txtUsusario.getText());
+          query.setParameter("senha", txtSenha.getText());
+          usuario = (int) query.getSingleResult();
+          
+          if (usuario > 0){
+              
+          }
+          else {
+              
+          }
+          
+          em.close();
+          emf.close();
+        
+        
+          /*try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
@@ -55,7 +86,9 @@ public class LoginController implements Initializable {
                 stage.show();
         } catch(Exception ee) {
            ee.printStackTrace();
-          }
+          }*/
+          
+          
 	
     }
 
