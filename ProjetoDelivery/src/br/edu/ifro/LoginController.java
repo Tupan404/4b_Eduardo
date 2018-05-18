@@ -41,8 +41,9 @@ public class LoginController implements Initializable {
     private AnchorPane principal;
     @FXML
     private TextField txtUsusario;
+ 
     @FXML
-    private PasswordField txtSenha;
+    private PasswordField passenha;
 
    
     
@@ -64,7 +65,7 @@ public class LoginController implements Initializable {
           Query query = em.createQuery("Select id from funcionario WHERE txtUsuario=:user and txtSenha=:senha");
           
           query.setParameter("user", txtUsusario.getText());
-          query.setParameter("senha", txtSenha.getText());
+          query.setParameter("senha", passenha.getText());
           usuario = (int) query.getSingleResult();
           
           if (usuario > 0){
